@@ -6,6 +6,7 @@ key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
 key_jump = keyboard_check_pressed(vk_space);
 key_slide = keyboard_check_pressed(vk_control);
+key_melee = mouse_check_button_pressed(mb_left)
 
 //Calc movoment horiz
 walljumpdelay = max(walljumpdelay-1,0);
@@ -150,6 +151,12 @@ else if (on_wall != 0 && !on_ground && (key_left != 0 || key_right != 0)) {
 	} else {
 		sprite_index = spr_player_run;
 	}
+}
+
+if (mouse_check_button_pressed(mb_left)){
+	instance_create_layer(x + 2, y, "Instances", obj_hitbox);
+	sprite_index = spr_player_atk;
+	
 }
 
 if(hsp != 0) {
