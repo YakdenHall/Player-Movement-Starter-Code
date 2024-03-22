@@ -1,4 +1,4 @@
-/// @description Core Player Lgoic
+/// @description Core Player Logic
 
 //Get player inputs
 
@@ -12,6 +12,15 @@ key_melee = mouse_check_button_pressed(mb_left)
 walljumpdelay = max(walljumpdelay-1,0);
 slidedelay = max(slidedelay-1,0);
 slideresetdelay = max(slideresetdelay-1,0);
+
+// direction facing
+if (key_left) {
+	facingLeft = true;
+}
+if (key_right) {
+	facingLeft = false;
+	
+}
 
 
 //disable movement for slide and wall jump
@@ -154,9 +163,18 @@ else if (on_wall != 0 && !on_ground && (key_left != 0 || key_right != 0)) {
 }
 
 if (mouse_check_button_pressed(mb_left)){
-	instance_create_layer(x + 2, y, "Instances", obj_hitbox);
-	sprite_index = spr_player_atk;
-	
+	if (not facingLeft){
+		show_debug_message("right")
+		var inst = instance_create_layer(x + 10, y - 50 , "Instances", obj_hitbox);
+		sprite_index = spr_player_atk;
+		obj_control.alarm[0] = room_speed * .75;
+	}
+	else{
+		show_debug_message("left")
+		var inst = instance_create_layer(x - 70, y - 50, "Instances", obj_hitbox);
+		sprite_index = spr_player_atk;
+		obj_control.alarm[0] = room_speed * .75;
+	}
 }
 
 if(hsp != 0) {

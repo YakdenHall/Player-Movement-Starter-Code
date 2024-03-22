@@ -33,3 +33,5 @@ slidedelay = 0;
 slidedelay_max = 30;
 slidestuck_spd = 1;
 slidestuck = false;
+
+facingLeft = false
