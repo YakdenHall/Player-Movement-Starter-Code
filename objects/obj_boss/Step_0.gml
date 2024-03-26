@@ -15,3 +15,6 @@ if (place_meeting(x, y + vsp, obj_wall)) {
 	}
 	vsp = 0;
 }
+
+alarm[1] = room_speed * 5;
+

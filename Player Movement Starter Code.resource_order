@@ -5,7 +5,10 @@
     {"name":"obj_control","order":3,"path":"objects/obj_control/obj_control.yy",},
     {"name":"obj_hitbox","order":2,"path":"objects/obj_hitbox/obj_hitbox.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
+    {"name":"obj_bullet","order":5,"path":"objects/obj_bullet/obj_bullet.yy",},
     {"name":"hitbox","order":11,"path":"sprites/hitbox/hitbox.yy",},
+    {"name":"spr_boss1","order":13,"path":"sprites/spr_boss1/spr_boss1.yy",},
+    {"name":"spr_bullet","order":14,"path":"sprites/spr_bullet/spr_bullet.yy",},
     {"name":"spr_player_atk","order":12,"path":"sprites/spr_player_atk/spr_player_atk.yy",},
     {"name":"spr_player_fall","order":7,"path":"sprites/spr_player_fall/spr_player_fall.yy",},
     {"name":"spr_player_jump","order":8,"path":"sprites/spr_player_jump/spr_player_jump.yy",},
@@ -15,7 +18,6 @@
     {"name":"spr_player","order":4,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"spr_tiles","order":3,"path":"sprites/spr_tiles/spr_tiles.yy",},
     {"name":"spr_wall","order":2,"path":"sprites/spr_wall/spr_wall.yy",},
-    {"name":"spr_boss1","order":13,"path":"sprites/spr_boss1/spr_boss1.yy",},
     {"name":"ts_tiles","order":4,"path":"tilesets/ts_tiles/ts_tiles.yy",},
   ],
 }
