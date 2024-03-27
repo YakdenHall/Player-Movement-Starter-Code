@@ -1,0 +1,9 @@
+boss_max_health = 100; // Set the maximum health of the boss
+boss_current_health = boss_max_health; // Initialize the boss's current health
+healthbar_width = 500; // Set the width of the health bar
+healthbar_height = 20; // Set the height of the health bar
+healthbar_x = 450; // Set the x-coordinate of the health bar
+healthbar_y = 730; // Set the y-coordinate of the health bar
+healthbar_target_width = healthbar_width;
+boss_name = "Gnu, The Fell Omen";
+damage_amount = 5;

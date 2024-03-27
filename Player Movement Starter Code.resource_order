@@ -1,11 +1,13 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
+    {"name":"obj_boss_healthbar","order":6,"path":"objects/obj_boss_healthbar/obj_boss_healthbar.yy",},
     {"name":"obj_boss","order":4,"path":"objects/obj_boss/obj_boss.yy",},
+    {"name":"obj_bullet","order":5,"path":"objects/obj_bullet/obj_bullet.yy",},
     {"name":"obj_control","order":3,"path":"objects/obj_control/obj_control.yy",},
     {"name":"obj_hitbox","order":2,"path":"objects/obj_hitbox/obj_hitbox.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
-    {"name":"obj_bullet","order":5,"path":"objects/obj_bullet/obj_bullet.yy",},
+    {"name":"obj_wall_v","order":7,"path":"objects/obj_wall_v/obj_wall_v.yy",},
     {"name":"hitbox","order":11,"path":"sprites/hitbox/hitbox.yy",},
     {"name":"spr_boss1","order":13,"path":"sprites/spr_boss1/spr_boss1.yy",},
     {"name":"spr_bullet","order":14,"path":"sprites/spr_bullet/spr_bullet.yy",},
@@ -17,6 +19,7 @@
     {"name":"spr_player_wall","order":6,"path":"sprites/spr_player_wall/spr_player_wall.yy",},
     {"name":"spr_player","order":4,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"spr_tiles","order":3,"path":"sprites/spr_tiles/spr_tiles.yy",},
+    {"name":"spr_wall_v","order":15,"path":"sprites/spr_wall_v/spr_wall_v.yy",},
     {"name":"spr_wall","order":2,"path":"sprites/spr_wall/spr_wall.yy",},
     {"name":"ts_tiles","order":4,"path":"tilesets/ts_tiles/ts_tiles.yy",},
   ],
