@@ -15,18 +15,16 @@ if (place_meeting(x, y + vsp, obj_wall)) {
 	}
 	vsp = 0;
 }
-
-if (obj_boss_healthbar.boss_current_health <= 50) {
-	hsp = -2;
-}
-
-if (bossFacing){
-	if (place_meeting(x + hsp, y, obj_wall)) {
-		image_xscale *= -1;
-		bossFacing = false;
-		alarm[1] = 2 * room_speed;
+if (teleport_complete == false){
+	if (obj_boss_healthbar.boss_current_health <= 50) {
+		instance_destroy(obj_boss);
+		instance_create_layer(x, y, "Instances", obj_boss_teleport)
+		obj_control.alarm[1] = 5 * room_speed;
 	}
 }
+
+
+
 
 if (!is_attacking) {
     x += lengthdir_x(speed, direction);
@@ -45,11 +43,23 @@ if (attackTimer <= 0) {
     attackTimer -= 1;
 }
 
-
-function perform_attack() {
-    var bullet = instance_create_layer(x - 50, y - 25, "Instances", obj_bullet);
-    bullet.direction = point_direction(x, y, obj_player.x, obj_player.y);
-	bullet.speed = 2
+if (facingright == false){
+	function perform_attack() {
+	    var bullet = instance_create_layer(x , y - 25, "Instances", obj_bullet);
+	    bullet.direction = point_direction(x, y, obj_player.x, obj_player.y);
+		bullet.speed = 2
 	
+	}
+}
+
+if (!is_attacking) {
+    // Check if boss's health is at 50% or below
+    if (obj_boss_healthbar.boss_current_health <= 50) {
+        // Set player damage multiplier to 0 (no damage)
+        obj_boss_healthbar.damage = 0;
+        
+        // Start a cooldown timer for 10 seconds
+        alarm[0] = room_speed * 10;
+    }
 }
 

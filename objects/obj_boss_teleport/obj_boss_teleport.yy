@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_control",
+  "%Name":"obj_boss_teleport",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_control",
+  "name":"obj_boss_teleport",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,7 +29,13 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
-  "spriteMaskId":null,
+  "spriteId":{
+    "name":"spr_boss_T",
+    "path":"sprites/spr_boss_T/spr_boss_T.yy",
+  },
+  "spriteMaskId":{
+    "name":"spr_boss_T",
+    "path":"sprites/spr_boss_T/spr_boss_T.yy",
+  },
   "visible":true,
 }

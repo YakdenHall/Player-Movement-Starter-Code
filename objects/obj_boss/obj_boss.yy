@@ -7,6 +7,7 @@
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_boss",
@@ -34,12 +35,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_boss1",
-    "path":"sprites/spr_boss1/spr_boss1.yy",
+    "name":"spr_boss",
+    "path":"sprites/spr_boss/spr_boss.yy",
   },
   "spriteMaskId":{
-    "name":"spr_boss1",
-    "path":"sprites/spr_boss1/spr_boss1.yy",
+    "name":"spr_boss",
+    "path":"sprites/spr_boss/spr_boss.yy",
   },
   "visible":true,
 }
