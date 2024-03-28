@@ -19,7 +19,7 @@ if (teleport_complete == false){
 	if (obj_boss_healthbar.boss_current_health <= 50) {
 		instance_destroy(obj_boss);
 		instance_create_layer(x, y, "Instances", obj_boss_teleport)
-		obj_control.alarm[1] = 5 * room_speed;
+		obj_control.alarm[1] = 1 * room_speed;
 	}
 }
 

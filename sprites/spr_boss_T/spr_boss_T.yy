@@ -65,7 +65,7 @@
     },
     "name":"spr_boss_T",
     "playback":1,
-    "playbackSpeed":1.25,
+    "playbackSpeed":5.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

@@ -8,5 +8,5 @@ function moveBossToOppositeSide() {
 	instance_destroy(obj_boss_teleport);
 	instance_create_layer(x, y, "Instances", obj_boss_teleport2)
 	obj_boss_teleport2.image_xscale = -1;
-	obj_boss_teleport2.alarm[0] = 5 * room_speed;
+	obj_boss_teleport2.alarm[0] = .5 * room_speed;
 }
