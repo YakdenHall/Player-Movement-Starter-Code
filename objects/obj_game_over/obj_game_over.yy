@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_hitbox",
-  "eventList":[],
+  "%Name":"obj_game_over",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_hitbox",
+  "name":"obj_game_over",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"hitbox",
-    "path":"sprites/hitbox/hitbox.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

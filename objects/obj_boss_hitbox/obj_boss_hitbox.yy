@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_hitbox",
-  "eventList":[],
+  "%Name":"obj_boss_hitbox",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_hitbox",
+  "name":"obj_boss_hitbox",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"hitbox",
-    "path":"sprites/hitbox/hitbox.yy",
+    "name":"boss_hitbox",
+    "path":"sprites/boss_hitbox/boss_hitbox.yy",
   },
   "spriteMaskId":null,
   "visible":true,
