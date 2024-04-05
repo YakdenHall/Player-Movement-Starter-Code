@@ -12,3 +12,4 @@ teleport_complete = false;
 ability_triggered = false; 
 ability_cooldown = room_speed * 8; 
 alarm[2] = ability_cooldown;
+start_attack = false;

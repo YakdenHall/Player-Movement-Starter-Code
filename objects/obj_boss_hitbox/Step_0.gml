@@ -12,11 +12,9 @@ if (place_meeting(x, y, obj_player)) {
     }
     
     // Update the player's health bar
-    if (instance_exists(obj_player_healthbar)) {
+    if (obj_player_healthbar.player_current_health == 0) {
         // Get the health bar object
-        instance_destroy(obj_player_healthbar)
-		room_goto(rm_game_over)
-		obj_game_over.alarm[0] = room_speed * 2	
+		room_restart()
     }
     
     // Destroy the hitbox

@@ -63,19 +63,21 @@ if (!is_attacking) {
     }
 }
 
-if (obj_boss_healthbar.boss_current_health <= obj_boss_healthbar.boss_max_health / 2) {
-    // Boss's health is at or below 50%
-    if (!ability_triggered) {
-        // Ability has not been triggered yet
-        var hitbox_instance = instance_create_layer(x, y, "Instances", obj_boss_hitbox);
-        
-        // Set hitbox direction towards the player
-        var player_obj = instance_nearest(x, y, obj_player); // Assuming obj_player is the player object
-        if (player_obj) {
-            var direction_to_player = point_direction(x, y, player_obj.x, player_obj.y);
-            hitbox_instance.direction = direction_to_player;
-        }
-        
-        ability_triggered = true; // Mark the ability as triggered
+if (obj_boss_healthbar.boss_current_health == 50 && !ability_triggered) {
+    // Mark the ability as triggered
+		alarm[3] = 2 * room_speed;
+
+    // Ability has not been triggered yet
+    var hitbox_instance = instance_create_layer(x, y, "Instances", obj_boss_hitbox);
+    
+    // Set hitbox direction towards the player
+    var player_obj = instance_nearest(x, y, obj_player); // Assuming obj_player is the player object
+    if (player_obj) {
+        var direction_to_player = point_direction(x, y, player_obj.x, player_obj.y);
+        hitbox_instance.direction = direction_to_player;
     }
+}
+
+if (!ability_triggered){
+	instance_destroy(obj_boss_hitbox)
 }
