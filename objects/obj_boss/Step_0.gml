@@ -63,21 +63,19 @@ if (!is_attacking) {
     }
 }
 
-if (obj_boss_healthbar.boss_current_health == 50 && !ability_triggered) {
-    // Mark the ability as triggered
-		alarm[3] = 2 * room_speed;
 
-    // Ability has not been triggered yet
-    var hitbox_instance = instance_create_layer(x, y, "Instances", obj_boss_hitbox);
+if (obj_boss_healthbar.boss_current_health <= 50 && !ability_triggered_test) {
+    // Mark the ability as triggered
+    ability_triggered_test = true;
     
-    // Set hitbox direction towards the player
-    var player_obj = instance_nearest(x, y, obj_player); // Assuming obj_player is the player object
-    if (player_obj) {
-        var direction_to_player = point_direction(x, y, player_obj.x, player_obj.y);
-        hitbox_instance.direction = direction_to_player;
-    }
+    // Start an alarm to create the hitbox after 5 seconds
+    alarm[2] = room_speed * 5;
 }
 
-if (!ability_triggered){
-	instance_destroy(obj_boss_hitbox)
+if (obj_boss_healthbar.boss_current_health <= 50 && !attack_initiated) {
+    // Mark the attack as initiated
+    attack_initiated = true;
+    
+    // Start an alarm to create the projectile after a delay (e.g., 1 second)
+    alarm[4] = room_speed * 1; // Adjust delay as needed
 }

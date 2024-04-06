@@ -19,7 +19,7 @@
     {"name":"inst_DD5DC57","path":"rooms/rm_level1/rm_level1.yy",},
     {"name":"inst_18D996A0","path":"rooms/rm_level1/rm_level1.yy",},
     {"name":"inst_58EF123B","path":"rooms/rm_level1/rm_level1.yy",},
-    {"name":"inst_FE9FDAD","path":"rooms/rm_level1/rm_level1.yy",},
+    {"name":"inst_1311C4F5","path":"rooms/rm_level1/rm_level1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -37,7 +37,7 @@
         {"$GMRInstance":"","%Name":"inst_DD5DC57","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_DD5DC57","objectId":{"name":"obj_player_healthbar","path":"objects/obj_player_healthbar/obj_player_healthbar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":48.0,"y":16.0,},
         {"$GMRInstance":"","%Name":"inst_18D996A0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_18D996A0","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.15625,"scaleY":7.0,"x":299.0,"y":16.0,},
         {"$GMRInstance":"","%Name":"inst_58EF123B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_58EF123B","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.15625,"scaleY":7.0,"x":96.0,"y":16.0,},
-        {"$GMRInstance":"","%Name":"inst_FE9FDAD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_FE9FDAD","objectId":{"name":"obj_player_healthbar","path":"objects/obj_player_healthbar/obj_player_healthbar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":16.0,},
+        {"$GMRInstance":"","%Name":"inst_1311C4F5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1311C4F5","objectId":{"name":"obj_wall_v","path":"objects/obj_wall_v/obj_wall_v.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":11.5,"scaleY":0.5,"x":16.0,"y":240.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":16,"SerialiseWidth":25,"TileCompressedData":[
           1,22,-23,26,3,23,27,0,-22,-2147483648,2,18,27,-23,-2147483648,3,18,27,0,-22,-2147483648,3,18,27,0,-22,

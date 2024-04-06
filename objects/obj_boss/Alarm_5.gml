@@ -1,0 +1,1 @@
+attack_initiated = false;

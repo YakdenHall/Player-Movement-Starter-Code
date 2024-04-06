@@ -181,4 +181,9 @@ if(hsp != 0) {
 	image_xscale = sign(hsp);
 }
 
+if (sprite_index == spr_player_slide) {
+    is_sliding = true;
+} else {
+    alarm[0] = 2 * room_speed;
+}
 //debug area
