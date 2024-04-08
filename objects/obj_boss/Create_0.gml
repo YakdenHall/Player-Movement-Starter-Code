@@ -15,3 +15,10 @@ alarm[2] = ability_cooldown;
 ability_triggered_test = false;
 start_attack = false;
 attack_initiated = false;
+flip_bullet_sprite = function() {
+    with (obj_bullet) {
+        if (image_xscale != -1) {
+            image_xscale *= -1; // Flip the sprite horizontally
+        }
+    }
+}
