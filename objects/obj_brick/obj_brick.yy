@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_hitbox",
+  "%Name":"obj_brick",
   "eventList":[],
   "managed":true,
-  "name":"obj_hitbox",
+  "name":"obj_brick",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"hitbox",
-    "path":"sprites/hitbox/hitbox.yy",
+    "name":"spr_brick",
+    "path":"sprites/spr_brick/spr_brick.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

@@ -5,5 +5,5 @@ if (boss_current_health <= 0){
 	obj_boss_death.image_xscale = -1;
 	instance_destroy(obj_boss)
 	instance_destroy(obj_boss_healthbar)
-	obj_control.alarm[2] = room_speed * 7;
+	obj_control.alarm[2] = room_speed * 9;
 }

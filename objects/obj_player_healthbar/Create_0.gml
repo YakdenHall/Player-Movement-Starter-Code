@@ -5,4 +5,4 @@ player_healthbar_height = 20; // Set the height of the health bar
 player_healthbar_x = 100; // Set the x-coordinate of the health bar
 player_healthbar_y = 100; // Set the y-coordinate of the health bar
 player_healthbar_target_width = player_healthbar_width;
-player_damage_amount = 10;
+player_damage_amount = 20;

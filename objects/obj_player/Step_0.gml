@@ -163,11 +163,12 @@ else if (on_wall != 0 && !on_ground && (key_left != 0 || key_right != 0)) {
 }
 
 if (mouse_check_button_pressed(mb_left)){
+	is_swinging = true
 	if (not facingLeft){
 		show_debug_message("right")
 		var inst = instance_create_layer(x + 10, y - 20 , "Instances", obj_hitbox);
 		sprite_index = spr_player_atk;
-		obj_control.alarm[0] = room_speed * .75;
+		obj_control.alarm[0] = .75 * room_speed;
 	}
 	else{
 		show_debug_message("left")
@@ -183,7 +184,10 @@ if(hsp != 0) {
 
 if (sprite_index == spr_player_slide) {
     is_sliding = true;
-} else {
     alarm[0] = 2 * room_speed;
+}
+
+if (!is_sliding){
+	obj_player_healthbar.player_damage_amount = 20;
 }
 //debug area
