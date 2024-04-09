@@ -4,7 +4,7 @@
 
 key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
-key_jump = keyboard_check_pressed(vk_space);
+key_jump = keyboard_check_pressed(vk_up);
 key_slide = keyboard_check_pressed(vk_control);
 key_melee = mouse_check_button_pressed(mb_left)
 
@@ -136,7 +136,10 @@ on_wall = place_meeting(x + 1, y, obj_wall) - place_meeting(x - 1, y, obj_wall);
 going_right = hsp > 0;
 
 //Animation
-if (slidedelay > 0 || slidestuck) {
+if (is_swinging) {
+	
+}
+else if (slidedelay > 0 || slidestuck) {
 	sprite_index = spr_player_slide;
 }
 else if (on_wall != 0 && !on_ground && (key_left != 0 || key_right != 0)) {
@@ -184,7 +187,7 @@ if(hsp != 0) {
 
 if (sprite_index == spr_player_slide) {
     is_sliding = true;
-    alarm[0] = 2 * room_speed;
+    alarm[0] = .75 * room_speed;
 }
 
 if (!is_sliding){
