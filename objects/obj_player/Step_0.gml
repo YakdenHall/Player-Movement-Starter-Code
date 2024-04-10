@@ -159,25 +159,31 @@ else if (on_wall != 0 && !on_ground && (key_left != 0 || key_right != 0)) {
 } else {
 	image_speed = 1;
 	if (hsp == 0) {
+		is_sliding = false;
+		not_moving = true;
 		sprite_index = spr_player;
 	} else {
+		not_moving = false;
 		sprite_index = spr_player_run;
 	}
 }
 
 if (mouse_check_button_pressed(mb_left)){
-	is_swinging = true
-	if (not facingLeft){
-		show_debug_message("right")
-		var inst = instance_create_layer(x + 10, y - 20 , "Instances", obj_hitbox);
-		sprite_index = spr_player_atk;
-		obj_control.alarm[0] = .75 * room_speed;
-	}
-	else{
-		show_debug_message("left")
-		var inst = instance_create_layer(x - 40, y - 20, "Instances", obj_hitbox);
-		sprite_index = spr_player_atk;
-		obj_control.alarm[0] = room_speed * .75;
+	if(!is_sliding and hsp == 0){
+		is_swinging = true
+		if (not facingLeft){
+			var inst = instance_create_layer(x + 10, y - 20 , "Instances", obj_hitbox);
+			if (not_moving){
+				sprite_index = spr_player_atk;
+			}
+			obj_control.alarm[0] = .75 * room_speed;
+		}
+		else{
+			show_debug_message("left")
+			var inst = instance_create_layer(x - 40, y - 20, "Instances", obj_hitbox);
+			sprite_index = spr_player_atk;
+			obj_control.alarm[0] = room_speed * .75;
+		}
 	}
 }
 

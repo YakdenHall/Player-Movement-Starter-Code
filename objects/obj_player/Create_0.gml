@@ -35,5 +35,6 @@ slidestuck_spd = .5;
 slidestuck = false;
 is_sliding = false;
 is_swinging = false
+not_moving = true;
 
 facingLeft = false

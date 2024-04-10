@@ -6,4 +6,4 @@ healthbar_x = 450; // Set the x-coordinate of the health bar
 healthbar_y = 730; // Set the y-coordinate of the health bar
 healthbar_target_width = healthbar_width;
 boss_name = "Gnu, The Fell Omen";
-damage_amount = .75;
+damage_amount = 1.5;
