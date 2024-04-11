@@ -11,7 +11,6 @@ hit_wall_below = false;
 teleport_complete = false;
 ability_triggered = false; 
 ability_cooldown = room_speed * 8; 
-alarm[2] = ability_cooldown;
 ability_triggered_test = false;
 start_attack = false;
 attack_initiated = false;
@@ -22,3 +21,4 @@ flip_bullet_sprite = function() {
         }
     }
 }
+phase_2 = false;

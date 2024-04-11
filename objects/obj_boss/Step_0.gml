@@ -53,6 +53,7 @@
 		if (!is_attacking) {
 		    // Check if boss's health is at 50% or below
 		    if (obj_boss_healthbar.boss_current_health <= 50) {
+				phase_2 = true;
 		        // Set player damage multiplier to 0 (no damage)
 		        obj_boss_healthbar.damage = 0;
         
@@ -62,10 +63,10 @@
 		}
 
 
-		if (obj_boss_healthbar.boss_current_health <= 50 and !ability_triggered_test) {
+		if (obj_boss_healthbar.boss_current_health <= 50 and !ability_triggered_test and phase_2) {
 		    // Mark the ability as triggered
 		    ability_triggered_test = true;
-    
+			
 		    // Start an alarm to create the hitbox after 5 seconds
 		    alarm[2] = room_speed * 5;
 		}
